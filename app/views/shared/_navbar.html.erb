@@ -11,7 +11,7 @@
       <a class="navbar-brand" href="#">Spare Room Project</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav navbar-right">
 
         <% if (!user_signed_in?) %>
             <li><%= link_to "Log In", new_user_session_path %> </li>
@@ -25,10 +25,10 @@
               <ul class="dropdown-menu">
                 <li><a href="#">Trips</a></li>
                 <li><a href="#">Watch List</a></li>
-                <li><a href="#">Edit Profile</a></li>
+                <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
                 <li role="separator" class="divider"></li>
                 <li><a href="#">Account Settings</a></li>
-                <li><a href="#">Log Out</a></li>
+                <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
               </ul>
             </li>
          
