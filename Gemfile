@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.0'
+gem 'rails', '4.2.4'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
@@ -33,7 +33,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 gem 'bootstrap-sass'
-gem 'devise'
+
+gem 'devise', '>= 1.3.4'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
