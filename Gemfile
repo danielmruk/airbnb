@@ -34,6 +34,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
 
 gem 'devise', '>= 1.3.4'
+gem 'toastr-rails'
 
 
 
