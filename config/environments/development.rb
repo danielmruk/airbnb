@@ -48,7 +48,7 @@ Rails.application.configure do
     port: 587,
     enable_starttls_auto: true,
     user_name: 'demo.code4startup@gmail.com',
-     password: 'dTMBvxFipCqa5YvvqGkEtg',
+    password: 'dTMBvxFipCqa5YvvqGkEtg',
     authentication: 'login'
   } 
 end

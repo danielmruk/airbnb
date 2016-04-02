@@ -25,7 +25,7 @@ gem 'bootstrap-sass'
 
 gem 'devise', '>= 1.3.4'
 gem 'toastr-rails'
-
+gem 'sendinblue', '~> 2.3'
 
 
 group :development, :test do
