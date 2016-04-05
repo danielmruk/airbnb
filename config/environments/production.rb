@@ -81,11 +81,11 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address: 'smtp.mandrillapp.com',
+    address: 'smtp.mailgun.org',
     port: 587,
     enable_starttls_auto: true,
-    user_name: 'danielmruk',
-    password: 'T1iw3_pvhMyqN0XdVxP0lg',
+    user_name: 'postmaster@sandbox29e7882ed8fa485aa7b75c25544bc4fa.mailgun.org',
+    password: '44174b3e237d49e9da7ecc40e80dbe33',
     authentication: 'login'
   }
 end
