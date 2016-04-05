@@ -48,7 +48,7 @@ Rails.application.configure do
     port: 587,
     enable_starttls_auto: true,
     user_name: 'postmaster@sandbox29e7882ed8fa485aa7b75c25544bc4fa.mailgun.org',
-    password: '44174b3e237d49e9da7ecc40e80dbe33',
+    password: 'testtest',
     authentication: 'login'
   } 
 end
