@@ -29,6 +29,7 @@ gem 'sendinblue', '~> 2.3'
 
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem "figaro"
 
 
 group :development, :test do
