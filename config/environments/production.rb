@@ -80,6 +80,7 @@ Rails.application.configure do
   
 
   ActionMailer::Base.smtp_settings = {
+  enable_starttls_auto: true,
   :port           => ENV['MAILGUN_SMTP_PORT'],
   :address        => ENV['MAILGUN_SMTP_SERVER'],
   :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
