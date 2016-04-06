@@ -78,7 +78,7 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   
-
+  #make sure the DNS is confirmed
   ActionMailer::Base.smtp_settings = {
   enable_starttls_auto: true,
   :port           => ENV['MAILGUN_SMTP_PORT'],
