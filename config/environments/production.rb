@@ -77,15 +77,15 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.action_mailer.default_url_options = { address: 'https://intense-plains-33356.herokuapp.com' }
+  #config.action_mailer.default_url_options = { address: 'https://intense-plains-33356.herokuapp.com' }
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     address: 'smtp.mailgun.org',
     port: 587,
     enable_starttls_auto: true,
-    user_name: ENV["mailgun_password"],
-    password: ENV["mailgun_login"],
+    user_name: ENV["mailgun_login"],
+    password: ENV["mailgun_password"],
     authentication: 'login'
   }
 end
