@@ -82,10 +82,10 @@ Rails.application.configure do
   ActionMailer::Base.smtp_settings = {
   enable_starttls_auto: true,
   :port           => ENV['MAILGUN_SMTP_PORT'],
-  :address        => 'smtp.mailgun.org',
-  :user_name      => ENV['mailgun_login'],
-  :password       => ENV['mailgun_password'],
-  :domain         => 'intense-plains-33356.heroku.com',
+  :address        => ENV['MAILGUN_SMTP_SERVER'],
+  :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
+  :password       => ENV['MAILGUN_SMTP_PASSWORD'],
+  :domain         => 'yourapp.heroku.com',
   :authentication => :plain,
 }
 ActionMailer::Base.delivery_method = :smtp
