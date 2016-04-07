@@ -77,7 +77,8 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  
+  config.action_mailer.default_url_options = { host: 'intense-plains-33356.herokuapp.com' }
+
   #make sure the DNS is confirmed
   ActionMailer::Base.smtp_settings = {
   enable_starttls_auto: true,
@@ -89,4 +90,5 @@ Rails.application.configure do
   :authentication => :plain,
 }
 ActionMailer::Base.delivery_method = :smtp
+
 end
