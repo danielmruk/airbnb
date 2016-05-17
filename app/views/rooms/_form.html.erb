@@ -49,6 +49,34 @@
 					</div>
 
 					<div class="row">
+						<div class="col-md-4">
+							<div class="form-group">
+								<label> Price per night</label>
+								<div class="input-group">
+									<%= f.text_field :price, placeholder: "Example: $150", class: "form-group" %>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-4">
+							<div class="form-group">
+								<%= f.check_box :is_tv %> TV
+							</div>
+							<div class="form-group">
+								<%= f.check_box :is_kitchen %> Kitchen
+							</div>
+							<div class="form-group">
+								<%= f.check_box :is_internet %> Internet
+							</div>
+							<div class="form-group">
+								<%= f.check_box :is_heating %> Heat
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
 						<div class="form-group">
 							<label>Summary </label>
 							<%= f.text_area :listing_name, placeholder: "Summary", class: "form-control" %>
@@ -56,6 +84,15 @@
 					</div>
 
 				</div>
+
+
+
+				<div class="row">
+					<div class="form-group">
+						<%= f.check_box :active %> Is this room able to be rented?
+					</div>
+				</div>
+
 				<div class="actions">
 					<%= f.submit "Save", class: "btn btn-primary" %>
 				</div>
