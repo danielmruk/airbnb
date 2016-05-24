@@ -130,3 +130,22 @@ body{
 	font-weight: bold;
 	text-decoration: none;
 }
+
+label {
+	color: #565a5c;
+	font-size: 1.1 em;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+select {
+	color: #565a5c;
+	background-color: #fff;
+	width: 100%;
+	border: 1px solid: #ccc;
+	border-radius: 2px;
+	padding: 10px;
+	appearance: none;
+	-moz-appearance: none; /* firefox */
+	-webkit-appearance: none; /* safari and chrome */
+}
