@@ -30,6 +30,7 @@ gem 'sendinblue', '~> 2.3'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'figaro'
+gem 'paperclip'
 
 
 group :development, :test do
