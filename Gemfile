@@ -31,6 +31,7 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'figaro'
 gem 'paperclip'
+gem 'jquery-ui-rails'
 
 
 group :development, :test do
